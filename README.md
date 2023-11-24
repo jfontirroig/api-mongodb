@@ -47,12 +47,12 @@ server {
 	server_name anydomain; # managed by Certbot
 	
 	location /mongodb {
-      proxy_pass https://anydomain:3070;
-      proxy_http_version 1.1;
-      proxy_set_header Upgrade $http_upgrade;
-      proxy_set_header Connection 'upgrade';
-      proxy_set_header Host $host;
-      proxy_cache_bypass $http_upgrade;
+	      proxy_pass https://anydomain:3070;
+	      proxy_http_version 1.1;
+	      proxy_set_header Upgrade $http_upgrade;
+	      proxy_set_header Connection 'upgrade';
+	      proxy_set_header Host $host;
+	      proxy_cache_bypass $http_upgrade;
 	}
 	
 	listen [::]:443 ssl ipv6only=on; # managed by Certbot
@@ -85,6 +85,14 @@ sudo systemctl start nginx
 ```
 
 ## Instalar MONGODB
+Instalación en Ubuntu 22.04
+
+```
+wget https://repo.mongodb.org/apt/ubuntu/dists/jammy/mongodb-org/6.0/multiverse/binary-amd64/mongodb-org-server_6.0.5_amd64.deb
+dpkg -i mongodb-org-server_6.0.5_amd64.deb
+systemctl start mongodb.service
+systemctl enable mongodb.service
+```
 
 ## INSTALAR APP
 
