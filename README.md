@@ -46,7 +46,7 @@ server {
 	index index.html index.htm index.nginx-debian.html;
 	server_name anydomain; # managed by Certbot
 	
-	location /mongodb {
+	location /api {
 	      proxy_pass https://anydomain:3000;
 	      proxy_http_version 1.1;
 	      proxy_set_header Upgrade $http_upgrade;
