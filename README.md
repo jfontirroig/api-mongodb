@@ -100,7 +100,7 @@ systemctl enable mongodb.service
 cd /home/api-mongodb/
 sudo npm run build
 sudo pm2 delete api-mongodb
-sudo API_CONFIG=/home/api-mongodb/config-api_mongodb.json pm2 start node lib/index.js --name "api-mongodb"
+sudo API_CONFIG=/home/api-mongodb/config-api.json pm2 start node lib/index.js --name "api-mongodb"
 sudo pm2 save
 sudo systemctl restart nginx
 ```
