@@ -11,9 +11,9 @@ const configDefaults = {
         json: false
     },
     domainName: 'api.id',
-    dbLocation: '/home/paradigma/api/registrar_db/api.db',
+    dbLocation: '/home/api-mongodb/registrar_db/api.db',
     mongodb_uri: 'mongodb://127.0.0.1:27017/crosscheck, { useNewUrlParser: true }',
-    port: 3070,
+    port: 3000,
     prometheus: { start: false, port: 0 },
     minBatchSize: 1
 }
