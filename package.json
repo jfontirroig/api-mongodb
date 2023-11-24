@@ -1,7 +1,7 @@
 {
     "name": "API",
     "version": "1.0.0",
-    "description": "A Service API for Paradigma Crosscheck",
+    "description": "A Service API for MongoDB CRUD",
     "private": true,
     "main": "lib/index.js",
     "dependencies": {
@@ -54,9 +54,9 @@
         "api": "lib/index.js"
     },
     "scripts": {
-        "start": "API_CONFIG=/home/paradigma/api/config-api.json sudo npm run build && node lib/index.js sudo npm run start",
-        "start:regtest": "API_DEVELOP=/home/paradigma/api/config-develop.json API_REGTEST=true sudo npm run start",
-        "build": "API_CONFIG=/home/paradigma/api/config-api.json babel src -d lib",
+        "start": "API_CONFIG=/home/api-mongodb/config-api.json sudo npm run build && node lib/index.js sudo npm run start",
+        "start:regtest": "API_DEVELOP=/home/api-mongodb/config-develop.json API_REGTEST=true sudo npm run start",
+        "build": "API_CONFIG=/home/api-mongodb/config-api.json babel src -d lib",
         "flow": "flow",
         "lint": "eslint src",
         "lint:fix": "eslint src --fix",
@@ -75,23 +75,22 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/paradigma-cl/api.git"
+        "url": "https://github.com/jfontirroig/api-mongodb"
     },
     "author": {
-        "name": "Paradigma Global",
-        "email": "info@paradigma.global",
-        "url": "https://paradigma.global"
+        "name": "José Fontirroig",
+        "email": "jfontirroig@gmail.com"
     },
     "license": "MIT",
     "contributors": [
         {
-            "name": "Josep Fontirroig"
+            "name": "José Fontirroig"
         }
     ],
     "bugs": {
-        "url": "https://github.com/paradigma-cl/api/issues"
+        "url": "https://github.com/jfontirroig/api-mongodb/issues"
     },
-    "homepage": "https://github.com/paradigma-cl/api#readme",
+    "homepage": "https://github.com/jfontirroig/api-mongodb#readme",
     "commitlint": {
         "extends": [
             "@commitlint/config-conventional"
