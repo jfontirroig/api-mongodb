@@ -1,7 +1,7 @@
 {
-    "dbLocation": "/home/paradigma/api/registrar_db/api.db",
-    "mongodb_uri": "mongodb://127.0.0.1:27017/crosscheck, { useNewUrlParser: true }",
-    "port": 3070,
+    "dbLocation": "/home/api-mongodb/registrar_db/api-mongodb.db",
+    "mongodb_uri": "mongodb://127.0.0.1:27017/db, { useNewUrlParser: true }",
+    "port": 3000,
     "winstonConsoleTransport": {
         "level": "info",
         "handleExceptions": false,
